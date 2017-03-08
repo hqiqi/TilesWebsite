@@ -1,0 +1,32 @@
+<h1>Tiles</h1>
+<% @posts.each do |post| %>
+	<h3><%=post.title %></h3>
+  <%= image_tag post.image.url(:medium) %>
+	<p><%= post.body %></p>
+
+<% end %>
+	<div class="container">
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="col-md-4">
+          <h2>Tile4</h2>
+          <p>"Organic architecture seeks superior sense of use and a finer sense of comfort, expressed in organic simplicity." Frank Lloyd Wright.
+
+Inspired by stone, the Materia tile collection features the material in its purest form. Available in two different surfaces, the natural and lappato (semi-gloss), for specific application.</p>
+          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+        </div>
+        <div class="col-md-4">
+          <h2>Tile5</h2>
+          <p>"Organic architecture seeks superior sense of use and a finer sense of comfort, expressed in organic simplicity." Frank Lloyd Wright.
+
+Inspired by stone, the Materia tile collection features the material in its purest form. Available in two different surfaces, the natural and lappato (semi-gloss), for specific application.</p>
+          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+       </div>
+        <div class="col-md-4">
+          <h2>Tile6</h2>
+          <p>"Organic architecture seeks superior sense of use and a finer sense of comfort, expressed in organic simplicity." Frank Lloyd Wright.
+
+Inspired by stone, the Materia tile collection features the material in its purest form. Available in two different surfaces, the natural and lappato (semi-gloss), for specific application.</p>
+          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+        </div>
+      </div>
