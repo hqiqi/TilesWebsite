@@ -1,4 +1,8 @@
 source 'https://rubygems.org'
+#for image
+gem 'carrierwave', '~> 0.10.0'
+gem 'mini_magick', '~> 4.3'
+#gem 'rmagick'
 
 gem 'coffee-script-source', '1.8.0'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
@@ -29,7 +33,6 @@ gem 'jbuilder', '~> 2.5'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
-gem "paperclip", "~> 5.0.0"
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

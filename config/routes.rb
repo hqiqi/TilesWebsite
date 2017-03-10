@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :tiles
 	root 'posts#index', as: 'home'
 
 	get 'about' => 'pages#about' , as: 'about'
