@@ -29,11 +29,25 @@ body {
     }
     .searchbar
     {
-        text-align: center;
+        text-align: right;
+        padding-left:0;
     }
     .search-bar
     {
         display: inline-block;
   vertical-align: middle;
   line-height: normal;
+    }
+    .filth
+    {
+      background-color: #00AEC7;
+    }
+    .main_logo
+    {
+      width:30%;
+      height:30%;
+    }
+    .main_cont
+    {
+      margin-top: 100px;
     }

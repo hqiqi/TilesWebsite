@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
-	root 'posts#index', as: 'home'
+  get 'main/show'
+
+	root 'main#show', as: 'home'
 
 	get 'about' => 'pages#about' , as: 'about'
 
