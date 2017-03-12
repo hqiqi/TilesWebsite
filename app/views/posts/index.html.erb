@@ -1,32 +1,29 @@
-<h1>Tiles</h1>
+<!--<h1>Tiles</h1>-->
+
+<div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Tiles</h2>
+                    <hr class="star-primary">
+                </div>
+            </div>
+
+<div class="row tiles">
 <% @posts.each do |post| %>
+<div class="col-md-3 portfolio-item" align="center">
+ <div class="caption">
+<div class="tilename">
 	<h3><%=post.title %></h3>
-  <%= image_tag post.image.url(:medium) %>
-	<p><%= post.body %></p>
-
+  </div>
+  <div class="tileimg">
+  <%= link_to post_path(id: post) do %>
+  <%= image_tag post.image.url %>
+  <% end %>
+  </div>
+	<div class="descript">
+  <p><%= post.body %></p>
+  </div>
+  </div>"
+  "
+</div>
 <% end %>
-	<div class="container">
-      <!-- Example row of columns -->
-      <div class="row">
-        <div class="col-md-4">
-          <h2>Tile4</h2>
-          <p>"Organic architecture seeks superior sense of use and a finer sense of comfort, expressed in organic simplicity." Frank Lloyd Wright.
-
-Inspired by stone, the Materia tile collection features the material in its purest form. Available in two different surfaces, the natural and lappato (semi-gloss), for specific application.</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-        </div>
-        <div class="col-md-4">
-          <h2>Tile5</h2>
-          <p>"Organic architecture seeks superior sense of use and a finer sense of comfort, expressed in organic simplicity." Frank Lloyd Wright.
-
-Inspired by stone, the Materia tile collection features the material in its purest form. Available in two different surfaces, the natural and lappato (semi-gloss), for specific application.</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-       </div>
-        <div class="col-md-4">
-          <h2>Tile6</h2>
-          <p>"Organic architecture seeks superior sense of use and a finer sense of comfort, expressed in organic simplicity." Frank Lloyd Wright.
-
-Inspired by stone, the Materia tile collection features the material in its purest form. Available in two different surfaces, the natural and lappato (semi-gloss), for specific application.</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-        </div>
-      </div>
+</div>
